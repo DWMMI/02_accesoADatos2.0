@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 // Handle errors
             }
         };
-        nodoPadre.addValueEventListener(listener);
+        nodoPadre.child(etNombre.getText().toString()).child("nombre").addValueEventListener(listener);
     }
 
 
